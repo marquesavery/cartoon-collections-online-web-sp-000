@@ -25,9 +25,9 @@ def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   binding.pry
-  if array.include?(cheese_types)
-    array
-  else
-    nil
+  cheese_types.collect do |cheese|
+    if array.include?(cheese)
+      "cheese"
+    end
   end
 end
