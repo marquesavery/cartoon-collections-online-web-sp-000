@@ -27,7 +27,7 @@ def find_the_cheese(array)# code an argument here
 #  binding.pry
   cheese_types.collect do |cheese|
     if array.include?(cheese)
-      cheese
+      return cheese
     end
   end
 end
